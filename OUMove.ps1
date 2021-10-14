@@ -18,5 +18,9 @@ $IdentityOU = "CN=$ComputerName,OU=Corporate Workstations,OU=Head Office,OU=Empi
 <#Get Target OU#>
 $TargetOU = "CN=$ComputerName,OU=Windows 10,OU=Corporate Laptops,OU=Head Office,OU=Empire Computer Accounts,DC=kgndcpr01,DC=empire,DC=corp"
 
+<#Setting the target OU#>
+Set-ADobject -Identity $IdentityOU -ProtectedFromAccidentalDeletion $False
+
 <#Move the computer into new OU#>
-Move-ADobject -Identity $IdentityOU -TargetPath $TargetOU
+<#Looked at https://blog.netwrix.com/2018/06/26/managing-ous-and-moving-their-objects-with-powershell/#>
+Move-ADobject -Identity $IdentityOU -TargetPath $TargetOU -WhatIf

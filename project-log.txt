@@ -1,0 +1,2 @@
+# Oct. 25
+Ran the computer for Jett's old pc, and based on the error log, it doesn't seem to take in the computer name as a variable correctly (ObjectNotFound error).

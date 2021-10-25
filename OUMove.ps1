@@ -10,7 +10,8 @@ the build process
 Import-Module ActiveDirectory
 
 <#Get the computer name#>
-$ComputerName = hostname
+<#Test with Jett's PC, PCBH4CPX2#>
+$ComputerName = PCBH4CPX2
 
 <#Get the Identity OU#>
 $IdentityOU = "CN=$ComputerName,OU=Corporate Workstations,OU=Head Office,OU=Empire Computer Accounts,DC=kgndcpr01,DC=empire,DC=corp"

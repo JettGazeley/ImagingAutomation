@@ -1,0 +1,28 @@
+PCBH4CPX2 : The term 'PCBH4CPX2' is not recognized as the name of a cmdlet, function, script file, or 
+operable program. Check the spelling of the name, or if a path was included, verify that the path is 
+correct and try again.
+At C:\Users\citrra\Documents\ImagingAutomation\OUMove.ps1:14 char:17
++ $ComputerName = PCBH4CPX2
++                 ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (PCBH4CPX2:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+Set-ADobject : Cannot find an object with identity: 'CN=,OU=Corporate Workstations,OU=Head 
+Office,OU=Empire Computer Accounts,DC=kgndcpr01,DC=empire,DC=corp' under: 'DC=empire,DC=corp'.
+At C:\Users\citrra\Documents\ImagingAutomation\OUMove.ps1:23 char:1
++ Set-ADobject -Identity $IdentityOU -ProtectedFromAccidentalDeletion $ ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (CN=,OU=Corporat...=empire,DC=corp:ADObject) [Set-ADObject]  
+   , ADIdentityNotFoundException
+    + FullyQualifiedErrorId : ActiveDirectoryCmdlet:Microsoft.ActiveDirectory.Management.ADIdentityNotFou  
+   ndException,Microsoft.ActiveDirectory.Management.Commands.SetADObject
+
+Move-ADobject : Cannot find an object with identity: 'CN=,OU=Corporate Workstations,OU=Head 
+Office,OU=Empire Computer Accounts,DC=kgndcpr01,DC=empire,DC=corp' under: 'DC=empire,DC=corp'.
+At C:\Users\citrra\Documents\ImagingAutomation\OUMove.ps1:27 char:1
++ Move-ADobject -Identity $IdentityOU -TargetPath $TargetOU -WhatIf
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (CN=,OU=Corporat...=empire,DC=corp:ADObject) [Move-ADObject  
+   ], ADIdentityNotFoundException
+    + FullyQualifiedErrorId : ActiveDirectoryCmdlet:Microsoft.ActiveDirectory.Management.ADIdentityNotFou  
+   ndException,Microsoft.ActiveDirectory.Management.Commands.MoveADObject

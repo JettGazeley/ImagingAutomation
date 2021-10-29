@@ -1,6 +1,5 @@
 # ImagingAutomation
-#
-# Developed by Jett & Rabab
+### Developed by Jett & Rabab
 
 ## TODO
 ### Run CMD with elevated privileges to run BAT scripts
